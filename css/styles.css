@@ -1,0 +1,186 @@
+body{
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Montserrat-bold";
+}
+
+p{
+  color:#8f8f8f;
+}
+
+/* section */
+
+.colored-section{
+  background-color: #ff4c68;
+  color: #fff; /* #000 shows black color */
+}
+
+.white-section{
+  background-color: #fff;
+}
+
+/* heading */
+
+.big-heading{
+  font-family: 'Montserrat-black', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* Navigation Bar */
+
+.navbar{
+  padding:0 0 4.5rem;
+}
+
+.navbar-brand{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0 18px;
+  font-size: 1.2rem;
+  font-family: Montserrat-light;
+}
+
+/* Title section */
+
+#title .container-fluid{
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Download Button */
+
+.download-button{
+  margin: 5% 3% 5% 0;
+}
+
+/* Tittle Image */
+
+.iphone-pic{
+  width: 320px;   /* some time you have to keep in mind between px and % */
+  transform: rotate(25deg);
+  position: absolute; /* this position is used for stacking purpose (z-index) */
+  right: 24%;  /* this is used to align our pic towards the navbar.(look better) */
+}
+
+/* features section */
+
+#features{
+
+  position: relative; /* used for stack at the top of title pic (z-index) */
+  z-index: 1; /* this we can remove, and there is no diff. in site(refer to pdf of z-index) */
+}
+
+.feature-tittle{
+  font-size: 1.5rem;
+}
+.feature-box{
+  padding: 5%;
+}
+
+.feature-icon{
+  margin-bottom: 1rem;
+  color: #ef8172;
+}
+
+.feature-icon:hover{
+  color: #ff4c68;
+}
+
+/* testimonial section */
+
+#testimonials{
+  background-color: #ef8172;
+}
+
+.testimonials-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonials-image-1{
+  width: 11%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonials-image-2{
+  width: 11%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* Press section */
+
+#press{
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-image{
+  width: 16%;
+  margin: 20px 20px 50px; /* 20 20 50 means 20 for top and 20 means left and right, and finally 50 means bottom */
+}
+
+/* Pricing Section */
+
+#pricing{
+  padding: 95px;
+}
+
+.pricing-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column{
+  padding: 3% 2%;
+}
+
+.sign-up{
+  width: 100%;
+}
+
+/* Call to action */
+
+#cta{
+  padding: 7% 17%;
+}
+
+/* Footer section */
+
+.footer-icon{
+  margin: 20px 10px;
+}
+
+ /* --------------media -------------- */
+
+@media(max-width: 1098px){
+
+  #title{
+    text-align: center;  /* remember in this case (when refractoring) this have different use */
+  }
+
+  .iphone-pic{
+    position: static;
+    transform: rotate(0);
+  }
+}
